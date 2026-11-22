@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World on Sunday 22 November 2026</title>
+<style>
+  :root {
+    --paper: #f5f0e6;
+    --ink: #161b26;
+    --muted: #4a5163;
+    --rule: #d8cfbd;
+    --navy: #13233f;
+    --eu: #2f5fb3;      /* Europe */
+    --me: #c4611c;      /* Middle East */
+    --af: #2f8a4c;      /* Africa */
+    --as: #7a3fa8;      /* Asia */
+    --am: #c0303a;      /* Americas */
+    --sp: #a77a12;      /* Sport & culture */
+    --cl: #1f7f86;      /* Climate */
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; background: var(--paper); }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--ink); position: relative; }
+
+  /* Masthead */
+  .mast { background: var(--navy); color: #fff; height: 100px; padding: 12px 18px 0; position: relative; }
+  .mast .kicker { font-family: Bahnschrift, 'Segoe UI', sans-serif; font-size: 13px; letter-spacing: 2.5px; color: #9fb4d8; }
+  .mast h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 47px; line-height: 1.05; font-weight: 700; letter-spacing: -0.5px; margin-top: 2px; }
+  .mast .tally { position: absolute; right: 18px; top: 14px; text-align: right; }
+  .mast .tally .big { font-family: Bahnschrift, 'Segoe UI', sans-serif; font-size: 26px; font-weight: 700; }
+  .mast .tally .sub { font-size: 12px; color: #c9d5ea; margin-top: 2px; }
+  .legend { position: absolute; right: 18px; bottom: 9px; display: flex; gap: 5px; }
+  .legend span { font-family: Bahnschrift, 'Segoe UI', sans-serif; font-size: 11px; padding: 2px 6px; border-radius: 3px; color: #fff; font-weight: 600; }
+
+  .note { font-size: 12px; color: var(--muted); padding: 5px 18px; border-bottom: 1px solid var(--rule); }
+  .note b { color: var(--ink); }
+
+  /* Lead */
+  .lead { display: flex; gap: 16px; padding: 9px 18px 9px; border-bottom: 2px solid var(--ink); height: 214px; }
+  .lead svg { flex: 0 0 236px; height: 194px; }
+  .lead .txt { flex: 1; }
+  .tag { font-family: Bahnschrift, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }
+  .lead h2 { font-family: Georgia, serif; font-size: 37px; line-height: 1.04; margin: 2px 0 5px; }
+  .lead p { font-size: 14px; line-height: 1.34; }
+  .lead .facts { display: flex; gap: 10px; margin-top: 7px; }
+  .lead .facts div { flex: 1; border-left: 3px solid var(--cl); padding-left: 7px; font-size: 11.5px; line-height: 1.22; color: var(--muted); }
+  .lead .facts b { display: block; font-family: Bahnschrift, 'Segoe UI', sans-serif; font-size: 18px; color: var(--ink); }
+
+  /* Cards */
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 9px 18px; }
+  .card { background: #fffdf8; border: 1px solid var(--rule); border-top: 4px solid var(--c); border-radius: 4px; padding: 6px 9px 6px 8px; display: flex; gap: 8px; height: 134px; }
+  .card svg { flex: 0 0 62px; height: 62px; margin-top: 4px; }
+  .card .tag { color: var(--c); font-size: 11px; }
+  .card h3 { font-size: 16px; line-height: 1.15; margin: 2px 0 3px; font-weight: 700; }
+  .card p { font-size: 12px; line-height: 1.3; color: #2b3140; }
+
+  /* Briefs */
+  .briefs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; padding: 4px 18px 0; }
+  .briefs h4 { font-family: Bahnschrift, 'Segoe UI', sans-serif; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; border-bottom: 2px solid var(--c); color: var(--c); padding-bottom: 2px; margin-bottom: 4px; }
+  .briefs li { list-style: none; font-size: 11.6px; line-height: 1.28; margin-bottom: 5px; padding-left: 9px; position: relative; }
+  .briefs li::before { content: ''; position: absolute; left: 0; top: 6px; width: 4px; height: 4px; background: var(--c); border-radius: 50%; }
+  .briefs li b { font-weight: 700; }
+
+  .foot { position: absolute; left: 0; right: 0; bottom: 0; height: 24px; background: var(--navy); color: #c9d5ea; font-size: 11px; padding: 5px 18px; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="kicker">THE WORLD'S NEWS IN ONE PAGE</div>
+  <h1>Sunday 22 November 2026</h1>
+  <div class="tally"><div class="big">23 stories · 5 continents</div><div class="sub">as reported on 22 Nov 2026</div></div>
+  <div class="legend">
+    <span style="background:var(--eu)">Europe</span><span style="background:var(--me)">Middle East</span><span style="background:var(--af)">Africa</span><span style="background:var(--as)">Asia</span><span style="background:var(--am)">Americas</span><span style="background:var(--sp)">Sport</span>
+  </div>
+</header>
+<div class="note">The news of <b>Sunday 22 November 2026</b>: what happened that day, or was first reported on it, in any time zone. Casualty figures are as reported that day and may change.</div>
+
+<section class="lead">
+  <svg viewBox="0 0 236 176" aria-label="COP31 draft rejected">
+    <rect x="0" y="0" width="236" height="176" rx="6" fill="#e3efe9"/>
+    <!-- globe -->
+    <circle cx="70" cy="92" r="56" fill="#2a86a0"/>
+    <path d="M38 62 q14 -10 30 -4 q8 10 -4 18 q-14 4 -12 16 q-12 -4 -18 -14 z M80 50 q16 2 24 14 q-6 8 -18 6 q-8 -8 -6 -20z M86 96 q14 -4 22 8 q-2 22 -20 30 q-10 -12 -2 -38z M44 112 q10 0 14 10 q-4 8 -12 6z" fill="#6fbf73"/>
+    <circle cx="70" cy="92" r="56" fill="none" stroke="#163d4c" stroke-width="3"/>
+    <!-- thermometer -->
+    <rect x="128" y="22" width="14" height="98" rx="7" fill="#fff" stroke="#163d4c" stroke-width="3"/>
+    <rect x="132" y="40" width="6" height="76" fill="#d8402f"/>
+    <circle cx="135" cy="126" r="13" fill="#d8402f" stroke="#163d4c" stroke-width="3"/>
+    <!-- draft document -->
+    <g transform="rotate(-6 186 92)">
+      <rect x="152" y="38" width="72" height="98" rx="3" fill="#fff" stroke="#163d4c" stroke-width="2.5"/>
+      <text x="188" y="56" text-anchor="middle" font-family="Bahnschrift, Segoe UI" font-size="10" font-weight="700" fill="#163d4c">ANTALYA</text>
+      <text x="188" y="68" text-anchor="middle" font-family="Bahnschrift, Segoe UI" font-size="10" font-weight="700" fill="#163d4c">PACT</text>
+      <rect x="162" y="76" width="52" height="4" fill="#b9c4cc"/>
+      <rect x="162" y="85" width="44" height="4" fill="#b9c4cc"/>
+      <rect x="162" y="94" width="50" height="4" fill="#b9c4cc"/>
+      <rect x="162" y="103" width="38" height="4" fill="#b9c4cc"/>
+    </g>
+    <g transform="rotate(-18 188 98)">
+      <rect x="150" y="84" width="78" height="26" rx="4" fill="none" stroke="#c0303a" stroke-width="3.5"/>
+      <text x="189" y="103" text-anchor="middle" font-family="Bahnschrift, Segoe UI" font-size="15" font-weight="700" fill="#c0303a">NO DEAL</text>
+    </g>
+    <text x="118" y="166" text-anchor="middle" font-family="Bahnschrift, Segoe UI" font-size="12" font-weight="700" fill="#163d4c">COP31 · ANTALYA, TÜRKİYE</text>
+  </svg>
+  <div class="txt">
+    <div class="tag" style="color:var(--cl)">Climate · Antalya, Türkiye</div>
+    <h2>COP31 climate summit collapses without a deal</h2>
+    <p>The EU, Panama and allies reject the "Antalya Pact" draft because it never names fossil fuels. COP31 president Murat Kurum says there is no consensus and no further text; UN chief Guterres voices frustration.</p>
+    <div class="facts">
+      <div><b>1st since 2009</b>UN climate summit to end with no overall deal since Copenhagen</div>
+      <div><b>~48 hours</b>over schedule: the longest COP on record</div>
+      <div><b>Fossil fuels</b>and finance for poorer nations split the talks</div>
+    </div>
+  </div>
+</section>
+
+<section class="cards">
+  <!-- 1 Libya -->
+  <div class="card" style="--c:var(--af)">
+    <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#e2f0e6"/><path d="M4 40 q7 -5 14 0 t14 0 t14 0 t14 0 v20 h-56z" fill="#2f6f9a"/><path d="M12 38 h40 l-6 -12 h-28z" fill="#5b6470" transform="rotate(180 32 32)"/><rect x="27" y="36" width="10" height="10" fill="#3d444d"/><path d="M40 12 h12 l-3 3 h-6z M44 9 v3" stroke="#222" stroke-width="2" fill="#222"/><path d="M46 16 l-8 14" stroke="#e0571f" stroke-width="2.5" stroke-dasharray="3 2"/><circle cx="36" cy="32" r="5" fill="#f2a02c"/></svg>
+    <div><div class="tag">Libya · Africa</div><h3>Russian corvette capsized in Benghazi</h3><p>A suspected Ukrainian naval drone hits the Merkury at the Benghazi naval base; a Maltese-flagged ship is also struck. Eastern Libya complains to the UN.</p></div>
+  </div>
+  <!-- 2 Ukraine -->
+  <div class="card" style="--c:var(--eu)">
+    <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#e3ebf7"/><path d="M12 58 v-40 h28 v12 l-6 6 l4 6 l-6 4 v12z" fill="#8b93a1"/><g fill="#dfe5ee"><rect x="16" y="22" width="5" height="5"/><rect x="25" y="22" width="5" height="5"/><rect x="16" y="31" width="5" height="5"/><rect x="25" y="31" width="5" height="5"/><rect x="16" y="40" width="5" height="5"/><rect x="16" y="49" width="5" height="5"/></g><path d="M40 50 l6 -4 l6 4 l4 8 h-20z" fill="#6a717d"/><path d="M44 10 l8 6 l-8 6 l2 -6z" fill="#222"/><path d="M42 30 l4 -6 l3 5 l5 -3 l-2 6z" fill="#f2a02c"/></svg>
+    <div><div class="tag">Ukraine · Europe</div><h3>Drone fells block of flats near Kyiv</h3><p>A Russian drone brings down part of a five-storey block in Dymer: 2 dead, 11 still sought. Zelensky counts 2,700 drones this week and urges the US to release Patriots.</p></div>
+  </div>
+  <!-- 3 Baltic -->
+  <div class="card" style="--c:var(--eu)">
+    <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#e3ebf7"/><path d="M4 46 q7 -4 14 0 t14 0 t14 0 t14 0 v14 h-56z" fill="#2f6f9a"/><path d="M8 38 h48 l-6 9 h-36z" fill="#9b3d2e"/><rect x="14" y="30" width="10" height="8" fill="#d9a441"/><rect x="25" y="30" width="10" height="8" fill="#4a7bb5"/><rect x="40" y="24" width="10" height="14" fill="#e8e8e8"/><path d="M22 30 q-4 -10 4 -16 q-1 7 4 8 q2 -6 -1 -10 q10 5 6 18z" fill="#f26b1d"/><path d="M26 30 q-1 -6 3 -9 q1 4 3 5 q1 -2 0 -5 q4 4 1 9z" fill="#ffd23f"/></svg>
+    <div><div class="tag">Baltic Sea · Europe</div><h3>Drone-hit Russian freighter burns off Finland</h3><p>The Sparta II, struck on Saturday en route to Kaliningrad, burns overnight; 16 crew taken off. Finnish PM Orpo: "war is spilling over". Rare air alert in Kaliningrad.</p></div>
+  </div>
+  <!-- 4 Poland -->
+  <div class="card" style="--c:var(--eu)">
+    <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#e3ebf7"/><g transform="rotate(-30 30 34)"><path d="M8 30 h34 l10 4 l-10 4 h-34z" fill="#6a717d"/><path d="M12 30 l-5 -6 h5 l5 6z M12 38 l-5 6 h5 l5 -6z" fill="#4a505a"/><path d="M27 29 l3 3 l-3 2 l3 3" stroke="#f5f0e6" stroke-width="2" fill="none"/></g><circle cx="44" cy="44" r="9" fill="none" stroke="#c0303a" stroke-width="3"/><path d="M50 50 l7 7" stroke="#c0303a" stroke-width="4" stroke-linecap="round"/></svg>
+    <div><div class="tag">Poland · Europe</div><h3>Debris was Russian Kh-101 missiles</h3><p>Prosecutors say fragments that fell on three villages on Friday came from Kh-101s built in late 2026 in Dubna. NATO's chief says allies stand with Poland.</p></div>
+  </div>
+  <!-- 5 Bahrain -->
+  <div class="card" style="--c:var(--me)">
+    <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#f7e8dc"/><rect x="6" y="44" width="52" height="14" fill="#c9b48f"/><rect x="12" y="30" width="14" height="14" fill="#8a7b63"/><rect x="16" y="20" width="4" height="10" fill="#8a7b63"/><path d="M36 44 l4 -14 h6 l4 14z" fill="#6a717d"/><path d="M34 22 a10 10 0 0 1 18 -4" stroke="#6a717d" stroke-width="4" fill="none"/><path d="M14 18 l4 -8 l2 6 l6 -4 l-3 7 l6 1 l-7 4z" fill="#f26b1d"/></svg>
+    <div><div class="tag">Iran · Gulf</div><h3>Iran claims Hormuz as Gulf strikes go on</h3><p>Tehran asserts control of the strait. Bahrain says an Iranian strike on an industrial plant hurt two, one critically; Iran's Guards claim US Patriot radars.</p></div>
+  </div>
+  <!-- 6 Sudan -->
+  <div class="card" style="--c:var(--af)">
+    <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#e2f0e6"/><rect x="8" y="34" width="14" height="24" fill="#b79c76"/><rect x="24" y="28" width="16" height="30" fill="#d9d9d9"/><rect x="27" y="32" width="10" height="7" fill="#4b92db"/><text x="32" y="38" text-anchor="middle" font-size="6" font-weight="700" fill="#fff" font-family="Segoe UI">UN</text><rect x="42" y="38" width="14" height="20" fill="#a88c66"/><path d="M38 8 l12 8 l-12 8 l3 -8z" fill="#222"/><path d="M40 22 q-6 4 -8 10" stroke="#e0571f" stroke-width="2" stroke-dasharray="3 2" fill="none"/><circle cx="32" cy="28" r="4" fill="#f2a02c"/></svg>
+    <div><div class="tag">Sudan · Africa</div><h3>Drones kill four near Khartoum</h3><p>Drone attacks near Sudan's capital kill at least four people and damage a United Nations building.</p></div>
+  </div>
+  <!-- 7 South Korea -->
+  <div class="card" style="--c:var(--as)">
+    <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#efe5f6"/><rect x="8" y="8" width="32" height="44" rx="2" fill="#fff" stroke="#5b6470" stroke-width="2"/><g fill="#b9c4cc"><rect x="13" y="15" width="22" height="3"/><rect x="13" y="22" width="18" height="3"/><rect x="13" y="29" width="22" height="3"/><rect x="13" y="36" width="14" height="3"/></g><rect x="34" y="30" width="24" height="20" rx="5" fill="#7a3fa8"/><circle cx="41" cy="40" r="3" fill="#fff"/><circle cx="51" cy="40" r="3" fill="#fff"/><path d="M46 30 v-6" stroke="#7a3fa8" stroke-width="2.5"/><circle cx="46" cy="22" r="2.5" fill="#7a3fa8"/><text x="46" y="61" text-anchor="middle" font-size="9" font-weight="700" fill="#7a3fa8" font-family="Bahnschrift, Segoe UI">AI</text></svg>
+    <div><div class="tag">South Korea · Asia</div><h3>Minister quits over AI exam cheating</h3><p>Education Minister Choi Kyo-jin resigns after criticism of the response to AI-assisted cheating on the college entrance exam; President Lee accepts.</p></div>
+  </div>
+  <!-- 8 US measles -->
+  <div class="card" style="--c:var(--am)">
+    <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#f8e3e4"/><circle cx="26" cy="30" r="13" fill="#c0303a"/><g stroke="#c0303a" stroke-width="3" stroke-linecap="round"><path d="M26 12 v-5"/><path d="M26 48 v5"/><path d="M8 30 h-4"/><path d="M44 30 h4"/><path d="M13 17 l-3 -3"/><path d="M39 43 l3 3"/><path d="M39 17 l3 -3"/><path d="M13 43 l-3 3"/></g><g fill="#f7c1c5"><circle cx="21" cy="26" r="3"/><circle cx="31" cy="33" r="2.5"/><circle cx="24" cy="36" r="2"/></g><g transform="rotate(40 48 46)"><rect x="42" y="36" width="12" height="22" rx="2" fill="#fff" stroke="#5b6470" stroke-width="2"/><rect x="46" y="58" width="4" height="5" fill="#5b6470"/><rect x="44" y="32" width="8" height="4" fill="#5b6470"/></g></svg>
+    <div><div class="tag">United States · Health</div><h3>Virginia records first measles death of 2026</h3><p>A child under 5 dies, days after health experts stripped the US of its measles-elimination status amid rising cases.</p></div>
+  </div>
+  <!-- 9 Brazil -->
+  <div class="card" style="--c:var(--am)">
+    <svg viewBox="0 0 64 64"><rect width="64" height="64" rx="6" fill="#f8e3e4"/><path d="M14 30 a10 10 0 0 1 10 -12 a12 12 0 0 1 22 2 a9 9 0 0 1 4 18 h-34 a8 8 0 0 1 -2 -8z" fill="#5b6470"/><path d="M34 38 l-6 10 h6 l-4 10 l10 -13 h-6 l4 -7z" fill="#ffd23f"/><g stroke="#4b92db" stroke-width="2.5" stroke-linecap="round"><path d="M18 44 l-3 6"/><path d="M46 44 l-3 6"/><path d="M22 50 l-3 6"/></g></svg>
+    <div><div class="tag">Brazil · Americas</div><h3>Storm kills five in Rio Grande do Sul</h3><p>A severe thunderstorm in Tupanciretã kills 5 people and injures more than 250.</p></div>
+  </div>
+</section>
+
+<section class="briefs">
+  <div style="--c:var(--eu)">
+    <h4>Europe &amp; Middle East</h4>
+    <ul>
+      <li><b>Odesa</b> moves schools online 23–27 Nov after strikes on the power grid.</li>
+      <li><b>Russia</b> says it downed 792 Ukrainian drones in a day and took Sosnovy Bor, Kharkiv region.</li>
+      <li><b>West Bank:</b> settlers attack several Palestinian villages; Israel's opposition leader calls it terrorism.</li>
+      <li><b>Gaza:</b> displaced Palestinians protest as Israeli air strikes go on.</li>
+    </ul>
+  </div>
+  <div style="--c:var(--as)">
+    <h4>Asia</h4>
+    <ul>
+      <li><b>Bangladesh:</b> garment workers clash with police in Gazipur over the minimum wage; 95 border-guard platoons deployed.</li>
+      <li><b>Indonesia:</b> 36 still missing after a sweets-factory fire in Serang, Banten; 3 dead.</li>
+      <li><b>India:</b> two road crashes in Rajasthan kill 12 and injure 23.</li>
+    </ul>
+  </div>
+  <div style="--c:var(--am)">
+    <h4>Americas</h4>
+    <ul>
+      <li><b>Seattle:</b> officials condemn ICE arrests at the city's airport as "horrific".</li>
+      <li><b>New York:</b> Aber Kawas becomes the first Palestinian in State Senate history.</li>
+      <li><b>F1, Las Vegas:</b> Max Verstappen wins from pole, his third Las Vegas win; Norris and Piastri complete the podium.</li>
+    </ul>
+  </div>
+  <div style="--c:var(--sp)">
+    <h4>Sport &amp; culture</h4>
+    <ul>
+      <li><b>Tennis:</b> Alcaraz beats Zverev 6–2, 7–6 in Turin for his first ATP Finals title.</li>
+      <li><b>MotoGP:</b> Marc Márquez seals an 8th premier-class crown in Portugal, level with Agostini.</li>
+      <li><b>Film:</b> Hong Kong's "We Are Born Good" wins best narrative feature at Taipei's 63rd Golden Horse Awards.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="foot"><span>Sources: Reuters, AP, AFP, Al Jazeera, France 24, Anadolu, The National</span><span>World news · Sunday 22 November 2026</span></footer>
+</body>
+</html>
