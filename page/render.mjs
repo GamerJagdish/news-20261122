@@ -5,6 +5,7 @@ import { execFileSync } from 'node:child_process';
 import { existsSync, statSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { dirname, join } from 'node:path';
+import { tmpdir } from 'node:os';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const page = pathToFileURL(join(here, 'front.html')).href;
@@ -25,6 +26,7 @@ execFileSync(browser, [
   '--disable-gpu',
   '--hide-scrollbars',
   '--disable-lcd-text',
+  `--user-data-dir=${join(tmpdir(), 'news-render-profile')}`,
   '--font-render-hinting=none',
   '--force-device-scale-factor=1',
   '--window-size=1024,1024',
