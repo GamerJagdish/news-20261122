@@ -24,6 +24,8 @@ execFileSync(browser, [
   '--headless=new',
   '--disable-gpu',
   '--hide-scrollbars',
+  '--disable-lcd-text',
+  '--font-render-hinting=none',
   '--force-device-scale-factor=1',
   '--window-size=1024,1024',
   `--screenshot=${out}`,
